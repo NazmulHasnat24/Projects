@@ -9,7 +9,7 @@ void main() {
     print("2. Print fruits using for-in loop");
     print("3. Count down using while loop");
     print("4. Exit");
-    stdout.write("Enter your choice: ");
+    print("Enter your choice: ");
     choice = int.parse(stdin.readLineSync()!);
 
     switch (choice) {
