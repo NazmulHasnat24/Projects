@@ -42,7 +42,7 @@ for(int i = 0; i < Questions.length; i++){
 
   String ? userAnswer = stdin.readLineSync()!.toUpperCase();
 
-  if(userAnswer == correctAnswers){
+  if(userAnswer == correctAnswers[i]){
     print("Correct Answer");
     Score++;
   }
