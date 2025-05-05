@@ -2,6 +2,8 @@ import 'dart:io';
 import 'Length.dart';
 import 'Temperature.dart';
 import 'Weight.dart';
+import 'Speed.dart';
+import 'Volume.dart';
 void main(){
 
 // Length
@@ -33,5 +35,26 @@ double ? Kilogram = double.tryParse(stdin.readLineSync()!);
 Weight weight = new Weight(Kilogram);
 
 weight.display();
+
+//Speed
+
+print("Enter a value to convert into miles :");
+
+double ? KiloMeter = double.tryParse(stdin.readLineSync()!);
+
+Speed speed = Speed(KiloMeter);
+
+speed.display();
+
+//Volume
+
+print("Enter a value to convert into Gallons :");
+
+double ? Liter = double.tryParse(stdin.readLineSync()!);
+
+Volume volume = Volume(Liter);
+
+volume.display();
+
 
 }
